@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <!-- Outer ring -->
+    <path android:fillColor="#30c97b3a"
+        android:pathData="M22,1 A21,21 0 1 1 21.99,1 Z"/>
+    <!-- Blade -->
+    <path android:fillColor="#e8a85c"
+        android:pathData="M22,4 L23.5,26 L22,27.5 L20.5,26 Z"/>
+    <!-- Crossguard -->
+    <path android:fillColor="#c97b3a"
+        android:pathData="M13,26 Q13,24 15,24 L29,24 Q31,24 31,26 L31,29 Q31,31 29,31 L15,31 Q13,31 13,29 Z"/>
+    <!-- Grip -->
+    <path android:fillColor="#9b59b6"
+        android:pathData="M21,31 L23,31 L23,39 L21,39 Z"/>
+    <!-- Pommel -->
+    <path android:fillColor="#c97b3a"
+        android:pathData="M22,40 A2.5,1.8 0 1 1 21.99,40 Z"/>
+</vector>

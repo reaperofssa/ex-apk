@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SaulApp" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#9b59b6</item>
+        <item name="colorPrimaryDark">#120812</item>
+        <item name="colorAccent">#c97b3a</item>
+        <item name="android:windowBackground">#120812</item>
+        <item name="android:statusBarColor">#120812</item>
+        <item name="android:navigationBarColor">#120812</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

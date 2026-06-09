@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_deep"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="32dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!-- Header with logo only -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="28dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_sword"
+                android:contentDescription="Logo"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/pill_purple"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:background="@drawable/dot_purple"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW USER"
+                    android:textSize="9sp"
+                    android:textColor="#c4b5fd"
+                    android:letterSpacing="0.1"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One last step — set up your profile"
+            android:textSize="11sp"
+            android:textColor="@color/text_dim"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Step dots -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <View android:layout_width="20dp" android:layout_height="7dp"
+                android:background="@drawable/dot_step_active" android:layout_marginRight="6dp"/>
+            <View android:layout_width="7dp" android:layout_height="7dp"
+                android:background="@drawable/dot_step" android:layout_marginRight="6dp"/>
+            <View android:layout_width="7dp" android:layout_height="7dp"
+                android:background="@drawable/dot_step"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identity"
+            android:textSize="10sp"
+            android:textColor="@color/text_dim"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Glass card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/glass_card"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your account"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick a name and unique username"
+                android:textSize="11sp"
+                android:textColor="@color/text_sec"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Display Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Name *"
+                android:textSize="10.5sp"
+                android:textColor="@color/text_sec"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Your name"
+                android:hintTextColor="@color/text_dim"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:background="@drawable/input_field"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="14dp"/>
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username *"
+                android:textSize="10.5sp"
+                android:textColor="@color/text_sec"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="your_username"
+                android:hintTextColor="@color/text_dim"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:background="@drawable/input_field"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:inputType="textNoSuggestions"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Letters, numbers and underscores only."
+                android:textSize="10sp"
+                android:textColor="@color/text_dim"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Continue button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/btn_primary">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue →"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By creating an account you agree to our Terms of Service and Privacy Policy. Already have an account? Sign in."
+            android:textSize="9.5sp"
+            android:textColor="@color/text_dim"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:lineSpacingExtra="3dp"/>
+
+    </LinearLayout>
+</ScrollView>
